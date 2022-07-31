@@ -10,6 +10,37 @@
     --hue-correct: 145;
 }
 
+header {
+    display:flex;
+    position: absolute;
+    justify-content: space-around;
+    margin-bottom:75%;  
+}
+
+h1 {
+    justify-content: center;
+    align-items: center;
+    font-size: xxx-large;
+    padding: 20px 20px;
+    text-shadow: 10px;
+    text-decoration-color: hsl(var(--hue), 100%, 50%);
+    color: hsl(var(--hue), 100%, 50%);
+}
+
+#header-blurb {
+    display:flex;
+    position: absolute;
+    justify-content: space-around;
+    margin-bottom:50%;   
+}
+
+h2 {
+    font-size: large;
+    padding: 10px 10px;
+    color: hsl(var(--hue), 100%, 50%);
+}
+
+
 /*I'm using vw instead of % or px to ensure my quiz is dead-center in the browser */
 body {
     --hue: var(--hue-neutral);
@@ -135,6 +166,11 @@ body.wrong {
     box-shadow: 0 0 10px 2px;
 }
 
+p {
+    color: var(--hue-neutral);
+    text-align: center;
+}
+
 form {
     width: 100%;
     display: flex;
@@ -158,4 +194,13 @@ input {
 
 .hide {
     display: none;
+}
+
+footer {
+    display:flex;
+    position: absolute;
+    margin-top:10%; 
+    margin-left: 4%;  
+    justify-content: center;
+    align-items: center;
 }

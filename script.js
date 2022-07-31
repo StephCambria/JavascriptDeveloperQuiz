@@ -118,7 +118,8 @@ function setTime() {
         secondsLeft--;
         timerEl.textContent = secondsLeft;
     }, 1000);
-    if(timerInterval <= 0) {
+    if(timerInterval === 0) {
+        clearInterval();
         gameOver();
     }
 }
