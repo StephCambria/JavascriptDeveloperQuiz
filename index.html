@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet">
+    <script defer src="script.js"></script>
+    <title>Full-Stack Developer Quiz!</title>
+</head>
+<body>
+
+ 
+
+    <!-- main body -->
+    <div id="container">
+    <div class="container">
+        <div id="question-container" class="hide">
+            <div class="quiz-header">
+                <span class="material-symbols-outlined">
+                    timer
+                    </span>
+                <p id="count-down">60</p>
+            </div>
+            <div id="question">Question</div>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+        </div>
+
+
+
+        <!-- buttons -->
+        <div class="controls">
+            <button id="start-btn" class="start-btn btn">Start</button>
+            <button id="next-btn" class="next-btn hide">Next</button>
+        </div>
+    </div>
+
+<br>
+
+    <!-- result page -->
+    <div id="result-container" class="hide">
+        <div id="end" class="flex-center flex-column"></div>
+        <p id="finalscore"></p>
+        <form>
+            <input 
+            type="text" 
+            name="username" 
+            id="username" 
+            placeholder="username"
+            />
+            <button 
+            type="submit" 
+            class="btn" 
+            id="saveScoreBtn" 
+            onclick="saveHighScore(event)"
+            disabled
+            >
+            save
+        </button>
+        </form>
+    </div>
+
+   
+    
+</body>
+</html>
