@@ -109,6 +109,7 @@ function clearStatusClass(element) {
 }
 
 //TIMER
+
 var timerEl = document.getElementById('count-down');
 
 var secondsLeft = 60;
@@ -118,7 +119,8 @@ function setTime() {
         secondsLeft--;
         timerEl.textContent = secondsLeft;
     }, 1000);
-    if(timerInterval <= 0) {
+    if(timerInterval === 0) {
+        clearTimeout();
         gameOver();
     }
 }
@@ -270,7 +272,7 @@ function saveHighScore() {
 
 function gameOver() {
     startButton.innerText = 'Restart'
-    clearInterval(timerInterval);
+    clearTimeout(timerInterval);
     saveHighScore();
 }
 
